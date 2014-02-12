@@ -1,0 +1,4 @@
+weatherMailR
+============
+
+weatherMail on RoR
