@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -50,3 +50,11 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'therubyracer'
+
+# Haml
+gem 'haml-rails'
+gem 'erb2haml'
+
+# for Unit Test
+gem 'rspec-rails', '2.13.1'
+gem 'capybara', '2.1.0'
