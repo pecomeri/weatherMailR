@@ -21,6 +21,14 @@
           %strong region:
           = notification.region
 .row
+  = form_tag() do
+    .col-md-4
+      %p
+        = text_area :page, :content
+    .col-md-4
+      %p
+        = submit_tag "subject"
+.row
   %p
     = link_to 'Edit', edit_user_path(@user)
     |
