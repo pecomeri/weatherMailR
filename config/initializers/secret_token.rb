@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-WeatherMailR::Application.config.secret_key_base = 'ca2e023763ef5bf6c787df98ad71ec4e3647398cbe8a08ab7a7fd8da888993f48d7236a851915a1256c3e79cd7f45e24ac28c602f1b74f442bc501b2c84be934'
+WeatherMailR::Application.config.secret_key_base = '8d118bedb56735149b73999503f019a218c8780b8d2a2aa583eb1065e1031d368b92cf5ce0fc0d5b3783f561a7b018f8ef80bb3e4e37d2fb6638201ebe771bb4'
