@@ -1,0 +1,35 @@
+- provide(:title, @user.name)
+.row
+  %p
+    %strong Name:
+    = @user.name
+  %p
+    %strong Email:
+    = @user.email
+  - @notifications.each do |notification|
+    .row
+      .col-md-3
+        %p
+          %strong SendTime:
+          = notification.send_time.hour
+      .col-md-3
+        %p
+          %strong Rainfall:
+          = notification.rainfall
+      .col-md-3
+        %p
+          %strong region:
+          = notification.region
+.row
+  = form_tag() do
+    .col-md-4
+      %p
+        = text_area :page, :content
+    .col-md-4
+      %p
+        = submit_tag "subject"
+.row
+  %p
+    = link_to 'Edit', edit_user_path(@user)
+    |
+    \#{link_to 'Back', users_path}
