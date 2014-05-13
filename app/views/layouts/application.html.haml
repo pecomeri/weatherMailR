@@ -9,7 +9,7 @@
   %body
     / Fixed navbar
     = render 'layouts/header'
-    .container.top-container{:role => "main"}
+    .top-container{:role => "main"}
       / Main jumbotron for a primary marketing message or call to action
       - flash.each do |key, value|
         %div{:class => "alert alert-#{key}"}= value
