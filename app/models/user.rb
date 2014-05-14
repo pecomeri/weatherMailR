@@ -6,16 +6,19 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
+  
   belongs_to :follower, class_name: "User"
   belongs_to :followed, class_name: "User"
-  before_save { self.email = email.downcase }
+  
   validates :name, presence: true, length: { maximum: 50 }
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
   validates :email, presence: true, 
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
-  has_secure_password
   validates :password, length: { minimum: 6 }
+  
+  has_secure_password
+  before_save { email.downcase! }
 
   def User.new_remember_token
     SecureRandom.urlsafe_base64
