@@ -30,6 +30,7 @@ GEM
     bcrypt-ruby (3.1.2)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
+    bootstrap_form (2.1.1)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -49,6 +50,11 @@ GEM
       html2haml
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     faker (1.1.2)
       i18n (~> 0.5)
     haml (4.0.5)
@@ -170,9 +176,11 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (= 3.1.2)
   bootstrap-sass (~> 3.1.1)
+  bootstrap_form
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)
   erb2haml
+  factory_girl_rails (= 4.2.1)
   faker (= 1.1.2)
   haml-rails
   jbuilder (~> 1.2)

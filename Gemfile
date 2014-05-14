@@ -19,6 +19,7 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap_form'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -64,3 +65,7 @@ gem 'erb2haml'
 # for Unit Test
 gem 'rspec-rails', '2.13.1'
 gem 'capybara', '2.1.0'
+
+group :test do
+  gem 'factory_girl_rails', '4.2.1'
+end
