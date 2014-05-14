@@ -71,3 +71,7 @@ group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
+
+# debugger
+gem 'pry-rails'
+gem 'pry-byebug'
